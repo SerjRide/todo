@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const SearchPanel = () => {
+    const searchText = 'search';
+    const searchStyle = {
+      fontSize: '25px'
+    };
+    return(
+      <input
+        style = { searchStyle }
+        placeholder = { searchText } />
+    );
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const App = () => {
+
+  const loginBox = <span>Log in plase1</span>;
+
+  return (
+    <div>
+      { loginBox }
+      <AppHeader />
+      <SearchPanel />
+      <TodoList />
+    </div>
+  );
+};
+
+const el = <App />;
+
+ReactDOM.render(el,
+  document.getElementById('root'));
