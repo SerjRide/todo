@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+}
+
+body {
+  padding-top: 15px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.first-cont {
+  height: 326px;
+}
+
+.col-md-6 {
+  max-width: 300px;
+}
