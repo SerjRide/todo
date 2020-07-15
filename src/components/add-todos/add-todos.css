@@ -1,0 +1,9 @@
+.add-todos {
+  margin-top: 10px;
+  height: 33px;
+  float: left;
+}
+
+.add-todos button {
+  width: 55px;
+}
