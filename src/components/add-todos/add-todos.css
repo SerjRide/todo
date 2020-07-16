@@ -1,9 +1,19 @@
 .add-todos {
+  width: 400px;
   margin-top: 10px;
-  height: 33px;
+  height: 41px;
   float: left;
 }
 
 .add-todos button {
   width: 55px;
+  height: 38px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.add-todos .form-control {
+  width: 342px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
